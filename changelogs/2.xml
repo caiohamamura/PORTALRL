@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog 
+xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<changeSet id="2" author="Caio">
+<comment>Este conjunto de changesets vão trocar nomes de coluna</comment>
+<renameColumn 
+tableName="MUNICIPIOFITO"
+oldColumnName="ID Município"
+newColumnName="idMunicipio"
+/>
+<renameColumn 
+tableName="MUNICIPIOFITO"
+oldColumnName="Área Prioritária"
+newColumnName="valAreaPrior"
+/>
+<renameColumn 
+tableName="MUNICIPIOFITO"
+oldColumnName="ID Fitoecologia"
+newColumnName="idFitoecologia"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Nome"
+newColumnName="nomMunicipio"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Área Total"
+newColumnName="valAreaTotal"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Chuva Máxima"
+newColumnName="valChuvaMax"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Chuva Total"
+newColumnName="valChuvaTotal"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Altitude"
+newColumnName="valAltitude"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Evapotranspiração"
+newColumnName="valEvapotransp"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Chuva Mínima"
+newColumnName="valChuvaMin"
+/>
+<renameColumn 
+tableName="MUNICIPIO"
+oldColumnName="Temperatura Mínima"
+newColumnName="valTempMin"
+/>
+<renameColumn 
+tableName="PRECOTERRA"
+oldColumnName="ID Preço Terra"
+newColumnName="idPrecoTerra"
+/>
+<renameColumn 
+tableName="PRECOTERRA"
+oldColumnName="ID Município"
+newColumnName="idMunicipio"
+/>
+<renameColumn 
+tableName="PRECOTERRA"
+oldColumnName="Preço"
+newColumnName="valPreco"
+/>
+
+         <renameColumn 
+         tableName="PRECMADESPECIE"
+         oldColumnName="Preco"
+         newColumnName="valPreco"
+         />
+
+</changeSet>
+
+<changeSet id="2.1" author="Caio">
+<comment>Continua</comment>
+<renameColumn 
+tableName="REGRAMODELO"
+oldColumnName="ID Regra Modelo"
+newColumnName="idRegraModelo"
+/>
+<renameColumn 
+tableName="REGRAMODELO"
+oldColumnName="ID Modelo Plantio"
+newColumnName="idModeloPlantio"
+/>
+<renameColumn 
+tableName="REGRAMODELO"
+oldColumnName="Regra Modelo"
+newColumnName="desRegra"
+/>
+
+<renameColumn 
+tableName="MODELOPLANTIO"
+oldColumnName="ID Modelo Plantio"
+newColumnName="idModeloPlantio"
+/>
+<renameColumn 
+tableName="MODELOPLANTIO"
+oldColumnName="Nome Modelo"
+newColumnName="nomModelo"
+/>
+<renameColumn 
+tableName="MODELOPLANTIO"
+oldColumnName="Descrição Modelo"
+newColumnName="desModelo"
+/>
+
+<renameColumn 
+tableName="MODELOPOSSIVEL"
+oldColumnName="ID Modelo Possível"
+newColumnName="idModeloPossivel"
+/>
+<renameColumn 
+tableName="MODELOPOSSIVEL"
+oldColumnName="ID Modelo Plantio"
+newColumnName="idModeloPlantio"
+/>
+<renameColumn 
+tableName="MODELOPOSSIVEL"
+oldColumnName="ID Finalidade"
+newColumnName="idFinalidade"
+/>
+<renameColumn 
+tableName="MODELOPOSSIVEL"
+oldColumnName="ID Espécie"
+newColumnName="idEspecie"
+/>
+<renameColumn 
+tableName="MODELOPOSSIVEL"
+oldColumnName="ID Fitoecologia"
+newColumnName="idFitoecologia"
+/>
+</changeSet>
+
+
+</databaseChangeLog>
