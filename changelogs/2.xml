@@ -227,7 +227,7 @@ newColumnName="desVariavel"
 />
 <renameColumn 
 tableName="VARIAVEL"
-oldColumnName="TipoDada"
+oldColumnName="TipoDado"
 newColumnName="tipoDado"
 />
 
