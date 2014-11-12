@@ -146,7 +146,71 @@ tableName="MODELOPOSSIVEL"
 oldColumnName="ID Fitoecologia"
 newColumnName="idFitoecologia"
 />
+
 </changeSet>
 
+
+<changeSet id="2.2" author="Caio">
+<comment>Continua</comment>
+<renameColumn 
+tableName="ESPECIEFITO"
+oldColumnName="ID Espécie"
+newColumnName="idEspecie"
+/>
+<renameColumn 
+tableName="ESPECIEFITO"
+oldColumnName="ID Fitoecologia"
+newColumnName="idFitoecologia"
+/>
+
+<renameColumn 
+tableName="FITOECOLOGIA"
+oldColumnName="ID Fitoecologia"
+newColumnName="idFitoecologia"
+/>
+<renameColumn 
+tableName="FITOECOLOGIA"
+oldColumnName="Nome Fitoecologia"
+newColumnName="nomFitoecologia"
+/>
+<renameColumn 
+tableName="FITOECOLOGIA"
+oldColumnName="ID Bioma"
+newColumnName="idBioma"
+/>
+
+<renameColumn 
+tableName="RECOMENDACAO"
+oldColumnName="DataAbertura"
+newColumnName="datAbertura"
+/>
+<renameColumn 
+tableName="RECOMENDACAO"
+oldColumnName="idUsuário"
+newColumnName="idUsuario"
+/>
+<renameColumn 
+tableName="RECOMENDACAO"
+oldColumnName="DataProjeto"
+newColumnName="datProjeto"
+/>
+
+<renameColumn 
+tableName="COMBINACAOBIODIVERSIDADE"
+oldColumnName="Escolha"
+newColumnName="idEscolha"
+/>
+
+<renameColumn 
+tableName="BIOMA"
+oldColumnName="ID Bioma"
+newColumnName="idBioma"
+/>
+<renameColumn 
+tableName="BIOMA"
+oldColumnName="Nome Bioma"
+newColumnName="nomBioma"
+/>
+</changeSet>
 
 </databaseChangeLog>
