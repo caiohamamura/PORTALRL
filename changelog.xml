@@ -16,7 +16,46 @@
          
          <changeSet id="1.1" author="Caio">
          <comment>Alterar nomes das tabelas para ficar em conformidade com o padrao</comment>
-         
+         <renameTable 
+         newTableName="ESPECIEBIOMA"
+         oldTableName="ESPÉCIE BIOMA"
+         />
+         <renameTable 
+         newTableName="ESPECIEFITO"
+         oldTableName="ESPÉCIE FITOECOLOGIA"
+         />
+         <renameTable 
+         newTableName="FONTEINFORMACAO"
+         oldTableName="FONTE INFORMAÇÃO"
+         />
+         <renameTable 
+         newTableName="GRUPOESPECIE"
+         oldTableName="GRUPO ESPÉCIE"
+         />
+         <renameTable 
+         newTableName="GRUPONIVEL1"
+         oldTableName="GRUPO NÍVEL 1"
+         />
+         <renameTable 
+         newTableName="GRUPONIVEL2"
+         oldTableName="GRUPO NÍVEL 2"
+         />
+         <renameTable 
+         newTableName="MODELOPLANTIO"
+         oldTableName="MODELO PLANTIO"
+         />
+         <renameTable 
+         newTableName="MODELOPOSSIVEL"
+         oldTableName="MODELO POSSÍVEL"
+         />
+         <renameTable 
+         newTableName="MUNICIPIO"
+         oldTableName="MUNICÍPIO"
+         />
+         <renameTable 
+         newTableName="MUNICIPIOFITO"
+         oldTableName="MUNICÍPIO FITOECOLOGIA"
+         />
          </changeSet>
          
 </databaseChangeLog>
