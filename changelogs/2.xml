@@ -213,4 +213,73 @@ newColumnName="nomBioma"
 />
 </changeSet>
 
+<changeSet id="2.3" author="Caio">
+<comment>Continua</comment>
+<renameColumn 
+tableName="VARIAVEL"
+oldColumnName="NomeVariavel"
+newColumnName="nomVariavel"
+/>
+<renameColumn 
+tableName="VARIAVEL"
+oldColumnName="DescVariavel"
+newColumnName="desVariavel"
+/>
+<renameColumn 
+tableName="VARIAVEL"
+oldColumnName="TipoDada"
+newColumnName="tipoDado"
+/>
+
+<renameColumn 
+tableName="FINALIDADE"
+oldColumnName="ID Finalidade"
+newColumnName="idFinalidade"
+/>
+<renameColumn 
+tableName="FINALIDADE"
+oldColumnName="Nome Finalidade"
+newColumnName="nomFinalidade"
+/>
+
+<renameColumn 
+tableName="OPERACAO"
+oldColumnName="ID Operação"
+newColumnName="idOperacao"
+/>
+<renameColumn 
+tableName="OPERACAO"
+oldColumnName="Descrição"
+newColumnName="desOperacao"
+/>
+
+<renameColumn 
+tableName="PROJETORL"
+oldColumnName="Valor"
+newColumnName="numValor"
+/>
+
+<renameColumn 
+tableName="PARAMETRO"
+oldColumnName="TxDesconto"
+newColumnName="valDesconto"
+/>
+<renameColumn 
+tableName="PARAMETRO"
+oldColumnName="JurosFinanciamento"
+newColumnName="valTaxa"
+/>
+
+<renameColumn 
+tableName="INSUMO"
+oldColumnName="ID Insumo"
+newColumnName="idInsumo"
+/>
+<renameColumn 
+tableName="INSUMO"
+oldColumnName="Descrição Insumo"
+newColumnName="desInsumo"
+/>
+</changeSet>
+
 </databaseChangeLog>
