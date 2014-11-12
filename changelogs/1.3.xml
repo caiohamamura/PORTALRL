@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+         <changeSet id="1.3" author="Caio">
+         <comment>Tabelas restantes</comment>
+         <renameTable 
+         newTableName="PRODUTOMADEIRA"
+         oldTableName="PRODUTO MADEIRA"
+         />
+         </changeSet>
+         
+         <changeSet id="1.4" author="Caio">
+         <comment>Rename views</comment>
+         <renameView 
+         oldViewName="MUNICÍPIO BIOMA"
+         newViewName="vMunicipioBioma"
+         />
+         <renameView 
+         oldViewName="MUNICÍPIO MADEIREIRA"
+         newViewName="vMunicipioMadeireira"
+         />
+         <renameView 
+         oldViewName="RESULTADO MODELO PIVOT"
+         newViewName="vResultadoModelo"
+         />
+         </changeSet>
+         
+         <changeSet id="1.5" author="Caio">
+         <comment>Change column names</comment>
+         <renameColumn 
+         tableName="PRODUTOMADEIRA"
+         oldColumnName="ID Produto Madeira"
+         newColumnName="idProdutoMadeira"
+         />
+         <renameColumn 
+         tableName="PRODUTOMADEIRA"
+         oldColumnName="Nome Produto"
+         newColumnName="nomeProduto"
+         />
+         <renameColumn 
+         tableName="PRECMADESPECIE"
+         oldColumnName="ID Preço Madeira Espécie"
+         newColumnName="idPrecMadEspecie"
+         />
+         <renameColumn 
+         tableName="PRECMADESPECIE"
+         oldColumnName="ID Espécie"
+         newColumnName="idEspecie"
+         />
+         <renameColumn 
+         tableName="PRECMADESPECIE"
+         oldColumnName="ID Produto Madeira"
+         newColumnName="idProdutoMadeira"
+         />
+         <renameColumn 
+         tableName="PRECMADESPECIE"
+         oldColumnName="Preço"
+         newColumnName="Preco"
+         />
+         
+         </changeSet>
+         
+</databaseChangeLog>

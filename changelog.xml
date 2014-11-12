@@ -58,4 +58,42 @@
          />
          </changeSet>
          
+         <changeSet id="1.2" author="Caio">
+         <comment>Mais tabelas</comment>
+         <renameTable 
+         newTableName="NAOMADEIREIRA"
+         oldTableName="NÃO MADEIREIRA"
+         />
+         <renameTable 
+         newTableName="OPERACAO"
+         oldTableName="OPERAÇÃO"
+         />
+         <renameTable 
+         newTableName="PRECMADESPECIE"
+         oldTableName="PREÇO MADEIRA ESPÉCIE"
+         />
+         <renameTable 
+         newTableName="PRECOTERRA"
+         oldTableName="PREÇO TERRA"
+         />
+         <renameTable 
+         newTableName="RECOMENDACAO"
+         oldTableName="RECOMENDAÇÃO"
+         />
+         <renameTable 
+         newTableName="REGRAMODELO"
+         oldTableName="REGRA MODELO"
+         />
+         <renameTable 
+         newTableName="RESULTADOMODELO"
+         oldTableName="RESULTADO MODELO"
+         />
+         <renameTable 
+         newTableName="USUARIO"
+         oldTableName="USUÁRIO"
+         />
+         </changeSet>
+         
+         <includeAll path="/changelogs/"/>
+         
 </databaseChangeLog>
