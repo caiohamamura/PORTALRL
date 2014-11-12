@@ -14,7 +14,17 @@ SendInput, {Up 2}{End}{Left}
 Return
 
 :*:<RC>::
-SendInput, {RAW}<renameColumn `rtableName=""`roldColumnName=""`rnewColumnName=""`r/>
+InputBox, tableName, Table Name
+InputBox, nCol, Number of Columns
+Loop %nCol%
+{
+SendInput, {RAW}<renameColumn `rtableName="%tableName%"`roldColumnName=""`rnewColumnName=""`r/>`r
+}
+nCol := nCol-1
+Loop %nCol%
+{
+SendInput, {Up 5}
+}
 SendInput, {Up 3}{End}{Left}
 Return
 

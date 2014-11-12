@@ -62,7 +62,6 @@
          oldColumnName="Preço"
          newColumnName="Preco"
          />
-         
          </changeSet>
          
 </databaseChangeLog>
