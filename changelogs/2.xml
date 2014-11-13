@@ -569,7 +569,145 @@ tableName="EQUIPAMENTO"
 oldColumnName="Descrição Equipamento"
 newColumnName="desEquipamento"
 />
+</changeSet>
 
+<changeSet id="2.6" author="Caio">
+<comment>Continua - Corrigir CUSTOSILVICULTURA, GRUPONIVEL1 GRUPONIVEL2 RESULTADOMODELO NAOMADEIREIA GRUPOESPECIE </comment>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="idEtaoa"
+newColumnName="idEtapa"
+/>
+
+<renameColumn 
+tableName="GRUPOESPECIE"
+oldColumnName="ID Espécie"
+newColumnName="idEspecie"
+/>
+<renameColumn 
+tableName="GRUPOESPECIE"
+oldColumnName="Id Grupo Nível 2"
+newColumnName="idGrupoNivel2"
+/>
+<renameColumn 
+tableName="GRUPOESPECIE"
+oldColumnName="Motivo Grupo"
+newColumnName="nomMotivoGrupo"
+/>
+
+<renameColumn 
+tableName="GRUPONIVEL1"
+oldColumnName="ID Grupo Nível 1"
+newColumnName="idGrupoNivel1"
+/>
+<renameColumn 
+tableName="GRUPONIVEL1"
+oldColumnName="Nome Grupo Nível 1"
+newColumnName="nomGrupoNível1"
+/>
+
+<renameColumn 
+tableName="GRUPONIVEL2"
+oldColumnName="ID Grupo Nível 2"
+newColumnName="idGrupoNivel2"
+/>
+<renameColumn 
+tableName="GRUPONIVEL2"
+oldColumnName="ID Grupo Nível 1"
+newColumnName="idGrupoNivel1"
+/>
+<renameColumn 
+tableName="GRUPONIVEL2"
+oldColumnName="Nome Grupo Nível 2"
+newColumnName="nomGrupoNivel2"
+/>
+
+<renameColumn 
+tableName="RESULTADOMODELO"
+oldColumnName="ID Resultado Modelo"
+newColumnName="idResultadoModelo"
+/>
+<renameColumn 
+tableName="RESULTADOMODELO"
+oldColumnName="ID Modelo"
+newColumnName="idModelo"
+/>
+<renameColumn 
+tableName="RESULTADOMODELO"
+oldColumnName="ID Municipio"
+newColumnName="idMunicipio"
+/>
+<renameColumn 
+tableName="RESULTADOMODELO"
+oldColumnName="ID Bioma"
+newColumnName="idBioma"
+/>
+<renameColumn 
+tableName="RESULTADOMODELO"
+oldColumnName="Idade"
+newColumnName="valIdade"
+/>
+<renameColumn 
+tableName="RESULTADOMODELO"
+oldColumnName="Valor"
+newColumnName="numValor"
+/>
+
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="ID Não Madeireira"
+newColumnName="idNaoMadeireira"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="ID Espécie"
+newColumnName="idEspecie"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Idade"
+newColumnName="valIdade"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Máxima Ocupação"
+newColumnName="valOcupacaoMax"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Densidade"
+newColumnName="valDensidade"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Produtividade"
+newColumnName="valProdutividade"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Valor"
+newColumnName="numValor"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Idade Máxima"
+newColumnName="valIdadeMax"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Custo Manutenção"
+newColumnName="valCustoManutencao"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Polinização"
+newColumnName="tipoPolinizacao"
+/>
+<renameColumn 
+tableName="NAOMADEIREIRA"
+oldColumnName="Classificação"
+newColumnName="tipoClassificacao"
+/>
 </changeSet>
 
 </databaseChangeLog>
