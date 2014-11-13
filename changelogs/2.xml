@@ -282,4 +282,102 @@ newColumnName="desInsumo"
 />
 </changeSet>
 
+<changeSet id="2.4" author="Caio">
+<comment>Continua - ESPECIEBIOMA COMBINACAOCARROCHEFE ESPECIE</comment>
+<renameColumn 
+tableName="ESPECIEBIOMA"
+oldColumnName="ID Espécie"
+newColumnName="idEspecie"
+/>
+<renameColumn 
+tableName="ESPECIEBIOMA"
+oldColumnName="ID Bioma"
+newColumnName="idBioma"
+/>
+<renameColumn 
+tableName="COMBINACAOCARROCHEFE"
+oldColumnName="NumArv"
+newColumnName="numArv"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="ID Espécie"
+newColumnName="idEspecie"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Nome Comum"
+newColumnName="nomComum"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Nome Científico"
+newColumnName="nomCientifico"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Carro Chefe"
+newColumnName="flaCarroChefe"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Madeireira"
+newColumnName="flaMadeireira"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Não Madeireira"
+newColumnName="flaNaoMadeireira"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Exótica"
+newColumnName="flaExotica"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Interessante"
+newColumnName="flaInteressante"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Charmosas"
+newColumnName="flaCharmosa"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Ecológicas"
+newColumnName="flaEcologica"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Abundância"
+newColumnName="valAbundancia"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Dispersão"
+newColumnName="tipoDispersao"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Máximo Árvore Hectare"
+newColumnName="numMaxArvHa"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Espaçamento"
+newColumnName="valEspacamento"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Espaçamento Linha"
+newColumnName="valEspacamentoLinha"
+/>
+<renameColumn 
+tableName="ESPECIE"
+oldColumnName="Espaçamento Entre Linha"
+newColumnName="valEspacamentoPlanta"
+/>
+</changeSet>
 </databaseChangeLog>
