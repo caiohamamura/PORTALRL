@@ -13,6 +13,11 @@ SendInput, {RAW}<renameTable `rnewTableName=""`roldTableName=""`r/>
 SendInput, {Up 2}{End}{Left}
 Return
 
+:*:<MDT>::
+SendInput, {RAW}<modifyDataType `rtableName=""`rcolumnName=""`rnewDataType=""`r/>
+SendInput, {Up 3}{End}{Left}
+Return
+
 :*:<RC>::
 InputBox, tableName, Table Name
 InputBox, nCol, Number of Columns

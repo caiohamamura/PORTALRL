@@ -380,4 +380,196 @@ oldColumnName="Espaçamento Entre Linha"
 newColumnName="valEspacamentoPlanta"
 />
 </changeSet>
+
+<changeSet id="2.5" author="Caio">
+<comment>Continua MADEIREIRA ETAPA EQUIPAMENTO MODELO FONTEINFORMACAO CUSTOSILVICULTURA</comment>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="ID Custos Silvicultura"
+newColumnName="idCustosSilvicultura"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="ID Fonte Informação"
+newColumnName="idFonteInformacao"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="ID Etapa"
+newColumnName="idEtaoa"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="ID Operação"
+newColumnName="idOperacao"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="ID Equipamento"
+newColumnName="idEquipamento"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="ID Insumo"
+newColumnName="idInsumo"
+/>
+<modifyDataType 
+tableName="CUSTOSILVICULTURA"
+columnName="Baixa Tech"
+newDataType="BIT"
+/>
+<modifyDataType 
+tableName="CUSTOSILVICULTURA"
+columnName="Média Tech"
+newDataType="BIT"
+/>
+<modifyDataType 
+tableName="CUSTOSILVICULTURA"
+columnName="Alta Tech"
+newDataType="BIT"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="Baixa Tech"
+newColumnName="flaBaixaTech"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="Média Tech"
+newColumnName="flaMediaTech"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="Alta Tech"
+newColumnName="flaAltaTech"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="RendHH"
+newColumnName="valRendHH"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="RendHM"
+newColumnName="valRendHM"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="Consumo Insumo"
+newColumnName="valConsumoInsumo"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="Despesa Área Operações"
+newColumnName="valDespesaOperacoes"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="Despesa Insumo"
+newColumnName="valDespesaInsumo"
+/>
+<renameColumn 
+tableName="CUSTOSILVICULTURA"
+oldColumnName="Despesa Total"
+newColumnName="valDespesaTotal"
+/>
+
+<renameColumn 
+tableName="COEFICIENTE"
+oldColumnName="ID Modelo"
+newColumnName="idModelo"
+/>
+<renameColumn 
+tableName="COEFICIENTE"
+oldColumnName="Parâmetro"
+newColumnName="nomParametro"
+/>
+<renameColumn 
+tableName="COEFICIENTE"
+oldColumnName="Valor"
+newColumnName="numValor"
+/>
+
+<renameColumn 
+tableName="FONTEINFORMACAO"
+oldColumnName="ID Fonte Informação"
+newColumnName="idFonteInformacao"
+/>
+<renameColumn 
+tableName="FONTEINFORMACAO"
+oldColumnName="Nome Fonte"
+newColumnName="nomFonte"
+/>
+
+<renameColumn 
+tableName="MODELO"
+oldColumnName="ID Modelo"
+newColumnName="idModelo"
+/>
+<renameColumn 
+tableName="MODELO"
+oldColumnName="ID Madeireira"
+newColumnName="idMadeireira"
+/>
+<renameColumn 
+tableName="MODELO"
+oldColumnName="Descrição"
+newColumnName="desModelo"
+/>
+<renameColumn 
+tableName="MODELO"
+oldColumnName="Variável"
+newColumnName="idVariavel"
+/>
+<renameColumn 
+tableName="MODELO"
+oldColumnName="Modelo"
+newColumnName="formulaModelo"
+/>
+
+<renameColumn 
+tableName="ETAPA"
+oldColumnName="ID Etapa"
+newColumnName="idEtapa"
+/>
+<renameColumn 
+tableName="ETAPA"
+oldColumnName="Descrição Etapa"
+newColumnName="desEtapa"
+/>
+
+<renameColumn 
+tableName="MADEIREIRA"
+oldColumnName="ID Madeireira"
+newColumnName="idMadeireira"
+/>
+<renameColumn 
+tableName="MADEIREIRA"
+oldColumnName="ID Espécie"
+newColumnName="idEspecie"
+/>
+<renameColumn 
+tableName="MADEIREIRA"
+oldColumnName="Tolerancia Abundância"
+newColumnName="valAbundanciaMax"
+/>
+<renameColumn 
+tableName="MADEIREIRA"
+oldColumnName="Classificação"
+newColumnName="tipoClassificacao"
+/>
+
+<renameColumn 
+tableName="EQUIPAMENTO"
+oldColumnName="ID Equipamento"
+newColumnName="idEquipamento"
+/>
+<renameColumn 
+tableName="EQUIPAMENTO"
+oldColumnName="Descrição Equipamento"
+newColumnName="desEquipamento"
+/>
+
+</changeSet>
+
 </databaseChangeLog>
