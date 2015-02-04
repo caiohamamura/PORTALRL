@@ -1,0 +1,28 @@
+valVol = 10
+
+valIdade = Symbol('valIdade')
+
+b0 = 2.6387990
+b1 = 0.7679570
+b2 = -0.0074380
+valChuvaMax = 223.3
+
+
+DAP = exp(b0 + b1 * ln(valIdade) + b2 * valChuvaMax)
+
+valIdade = exp((ln(DAP)-b0-b2*valChuvaMax)/b1)
+
+HT = exp( 0.34993 + 0.66159 * ln(exp(b0 + b1 * ln(valIdade) + b2 * valChuvaMax)))
+
+Vol = exp( - 7.3801 + 1.6502 * ln(DAP) + 0.4164 * ln(HT) - 15.7022 * ( 1 / ( sqrt(HT) * DAP)))
+
+free_symbols
+
+
+
+WEIBULL
+
+alfa = 2.900673\
+beta = 10.748792
+
+1-exp(-(14/beta)**alfa)
