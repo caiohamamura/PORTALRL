@@ -1,0 +1,5 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-12-11 08:34
+Drop table "dbo.RLCOMBINACAOCARROCHEFEMF"
+Drop constraints
+Table "RLCOMBINACAOCARROCHEFEMF" dropped.

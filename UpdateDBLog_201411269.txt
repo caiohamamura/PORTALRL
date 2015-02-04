@@ -1,0 +1,8 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-11-26 20:13
+Drop foreign key constraints
+Constraint "RESULTADOMODELO.FK_RESULTADO MODELO_MUNICÍPIO" dropped.
+Alter table "dbo.RESULTADOMODELO"
+Add foreign key constraints
+Constraint "RESULTADOMODELO.FK_RESULTADO MODELO_MUNICÍPIO" added.
+Constraint "RESULTADOMODELO.FITOECOLOGIA_RESULTADOMODELO" added.

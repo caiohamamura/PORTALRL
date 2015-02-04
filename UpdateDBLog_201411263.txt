@@ -1,0 +1,4 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-11-26 18:25
+Repair/add procedures
+Procedure "RodaModelo" added.

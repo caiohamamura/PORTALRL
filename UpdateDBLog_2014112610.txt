@@ -1,0 +1,14 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-11-26 21:04
+Drop views
+View "vMunicipioEspecie" dropped.
+Drop foreign key constraints
+Constraint "RESULTADOMODELO.FK_RESULTADO MODELO_MUNICÍPIO" dropped.
+Constraint "RESULTADOMODELO.FITOECOLOGIA_RESULTADOMODELO" dropped.
+Alter table "dbo.RESULTADOMODELO"
+Constraint "RESULTADOMODELO.TUC_RESULTADOMODELO_1" added.
+Add foreign key constraints
+Constraint "RESULTADOMODELO.FK_RESULTADO MODELO_MUNICÍPIO" added.
+Constraint "RESULTADOMODELO.FITOECOLOGIA_RESULTADOMODELO" added.
+Repair/add views
+View "vMunicipioEspecie" added.

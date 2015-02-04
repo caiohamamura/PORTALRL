@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+               http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+               <changeSet id="criar_idEspecie_MODELO" author="Caio">
+                <addColumn
+                tableName="MODELO">
+                <column name="idEspecie"
+                type="int">
+                <constraints foreignKeyName="FK_MODELO_idEspecie_ESPECIE" references="ESPECIE(idEspecie)" deleteCascade="true"/>
+                </column>
+                </addColumn>
+               </changeSet>
+               
+               
+               <changeSet id="colocarIDEspecie" author="Caio">
+               <sql>
+               UPDATE MODELO
+               SET idEspecie = MADEIREIRA.idEspecie
+               FROM MADEIREIRA JOIN MODELO ON MADEIREIRA.idMadeireira = MODELO.idMadeireira
+               </sql>
+               <rollback>
+               <sql>
+               UPDATE MODELO SET idEspecie = null
+               </sql>
+               </rollback>
+               </changeSet>
+               
+               
+               <changeSet id="dropIDMadeireira" author="Caio">
+               <dropUniqueConstraint tableName="MODELO" constraintName="UI_Modelo"/>
+               <dropForeignKeyConstraint baseTableName="MODELO" constraintName="FK__Modelo__Madeirei__3B75D760"/>
+               <dropColumn tableName="MODELO" columnName="idMadeireira"/>
+               <rollback>
+               <addColumn
+               tableName="MODELO">
+               <column name="idMadeireira"
+               type="int">
+               <constraints nullable="false" foreignKeyName="FK__Modelo__Madeirei__3B75D760" references="MADEIREIRA(idMadeireira)" deleteCascade="true"/>
+               </column>
+               </addColumn>
+               <addUniqueConstraint constraintName="UI_Modelo" tableName="MODELO" columnNames="idMadeireira, idVariavel, Ano"/>
+               </rollback>
+               </changeSet>
+               
+               
+               <changeSet id="addContraintsBasedOnidEspecie_MODELO" author="Caio">
+                <addUniqueConstraint constraintName="UC_MODELO" tableName="MODELO" columnNames="idEspecie,idVariavel,Ano"/>  
+               </changeSet>
+               </databaseChangeLog>

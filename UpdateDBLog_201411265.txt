@@ -1,0 +1,30 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-11-26 19:21
+Drop table "dbo.DATABASECHANGELOG"
+Drop constraints
+Constraint "DATABASECHANGELOG.PK__DATABASE__3214EC27D579DCBF" dropped.
+Table "DATABASECHANGELOG" dropped.
+Drop table "dbo.DATABASECHANGELOGLOCK"
+Drop constraints
+Constraint "DATABASECHANGELOGLOCK.PK_DATABASECHANGELOGLOCK" dropped.
+Table "DATABASECHANGELOGLOCK" dropped.
+Drop table "dbo.dezrepo_permissions"
+Drop constraints
+Constraint "dezrepo_permissions.PK__dezrepo___A6CF326B3E2CCBB7" dropped.
+Table "dezrepo_permissions" dropped.
+Drop table "dbo.dezrepo_projects"
+Drop constraints
+Constraint "dezrepo_projects.PK__dezrepo___ADA929EF11A45DC0" dropped.
+Table "dezrepo_projects" dropped.
+Drop table "dbo.dezrepo_projectversions"
+Drop constraints
+Constraint "dezrepo_projectversions.PK__dezrepo___10CE224E8DAB5887" dropped.
+Table "dezrepo_projectversions" dropped.
+Drop table "dbo.dezrepo_settings"
+Drop constraints
+Constraint "dezrepo_settings.PK__dezrepo___B4E0A0FD3E599510" dropped.
+Table "dezrepo_settings" dropped.
+Drop table "dbo.dezrepo_users"
+Drop constraints
+Constraint "dezrepo_users.PK__dezrepo___F3DBC5739B2AA2E2" dropped.
+Table "dezrepo_users" dropped.

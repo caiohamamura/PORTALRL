@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+               http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+               <changeSet id="DividirEmnomVariaveleidVariavelnoMODELO" author="Caio">
+               <renameColumn 
+               tableName="MODELO"
+               oldColumnName="idVariavel"
+               newColumnName="nomVariavel"
+               />
+               <addColumn
+               tableName="MODELO">
+               <column name="idVariavel"
+               type="int">
+               </column>
+               </addColumn>
+               </changeSet>
+               <changeSet id="criarVariaveisConformeNomes" author="Caio">
+               <sql>
+               INSERT INTO VARIAVEL(nomVariavel, desVariavel, tipoDado)
+               SELECT DISTINCT nomVariavel, 'Variável biométrica', 'float' FROM MODELO
+               </sql>
+               <rollback>
+               <sql>
+               DELETE FROM VARIAVEL WHERE nomVariavel EXISTS (SELECT DISTINCT nomVariavel
+               FROM MODELO M
+               WHERE VARIAVEL.nomVariavel = M.nomVariavel)
+               </sql>
+               </rollback>
+               </changeSet>
+               <changeSet id="pegaIdVariavelconformeNome" author="Caio">
+               <sql>
+UPDATE MODELO SET idVariavel = VARIAVEL.idVariavel
+FROM VARIAVEL JOIN MODELO ON VARIAVEL.nomVariavel = MODELO.nomVariavel
+</sql>
+<rollback>
+<sql>
+UPDATE MODELO SET idVariavel = null
+</sql>
+</rollback>               
+               </changeSet>
+               <changeSet id="ApaganomVariaveldoMODELO" author="Caio">
+               <dropUniqueConstraint tableName="MODELO" constraintName="UI_Modelo"/>
+               <dropColumn tableName="MODELO" columnName="nomVariavel"/>
+               <addUniqueConstraint constraintName="UI_Modelo" tableName="MODELO" columnNames="idMadeireira, idVariavel, Ano"/>
+               <rollback>
+               <addColumn
+               tableName="MODELO">
+               <column name="nomVariavel"
+               type="VARCHAR(30)">
+               </column>
+               </addColumn>
+               <dropUniqueConstraint tableName="MODELO" constraintName="UI_Modelo"/>
+               <addUniqueConstraint constraintName="UI_Modelo" tableName="Modelo" columnNames="idMadeireira, nomVariavel, Ano"/>
+               <sql>
+               UPDATE MODELO
+               SET nomVariavel = VARIAVEL.nomVariavel
+               FROM VARIAVEL JOIN MODELO ON Variavel.idVariavel = MODELO.idVariavel
+               </sql>               
+               </rollback>
+               </changeSet>
+               </databaseChangeLog>

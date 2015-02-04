@@ -1,0 +1,17 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-12-11 08:28
+Drop foreign key constraints
+Constraint "RLMODELO.FK_MODELO_idEspecie_ESPECIE" dropped.
+Constraint "RLMODELO.VARIAVEL_MODELO" dropped.
+Constraint "RLRESULTADOMODELO.FK__RESULTADO__idMun__6D9742D9" dropped.
+Alter table "dbo.RLMODELO"
+Constraint "RLMODELO.PK__Modelo__C1FE6AA90BD5D5A3" dropped.
+Constraint "RLMODELO.PK__Modelo__C1FE6AA90BD5D5A3" added.
+Alter table "dbo.RLRESULTADOMODELO"
+Column "RLRESULTADOMODELO.idVariavel" added.
+Add foreign key constraints
+Constraint "RLCOEFICIENTE.RLMODELO_RLCOEFICIENTE" added.
+Constraint "RLMODELO.FK_MODELO_idEspecie_ESPECIE" added.
+Constraint "RLMODELO.VARIAVEL_MODELO" added.
+Constraint "RLRESULTADOMODELO.FK__RESULTADO__idMun__6D9742D9" added.
+Constraint "RLRESULTADOMODELO.RLMODELO_RLRESULTADOMODELO" added.

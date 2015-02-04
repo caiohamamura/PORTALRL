@@ -1,0 +1,10 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-11-26 20:06
+Drop procedures
+Procedure "RodaModelo" dropped.
+Drop views
+View "vMunicipioEspecie" dropped.
+Repair/add views
+View "vMunicipioEspecie" added.
+Repair/add procedures
+Procedure "RodaModelo" added.

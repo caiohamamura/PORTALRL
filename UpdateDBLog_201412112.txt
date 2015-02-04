@@ -1,0 +1,4 @@
+Modify MS SQL Server 2012 database.
+Date/time: 2014-12-11 08:11
+Add foreign key constraints
+Constraint "MicroRegion.LandPrice_MicroRegion" added.
